@@ -1,0 +1,106 @@
+body {
+   margin: 0;
+   height: 100%;
+}
+
+input[type=text], select, button {
+    width: 100px;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+li {
+    font-size: 14px;
+}
+
+.container {
+   height: 100vh;
+   display: grid;
+   grid-template-rows: 130px 1fr 70px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+.secondary-title {
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.pokemon {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.paging {
+    border-radius: 5rem;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 12px;
+    background-color: #FD7238;
+    color: white;
+}
+
+.prev-next {
+    width: 30px;
+    height: 30px;
+    background-color: darkgray;
+    cursor: pointer;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    margin-left: 10px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
